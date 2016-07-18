@@ -12,9 +12,9 @@ function doStuff() {
     function toggleCardState() {
         card.open = !card.open;
         frontFace.className = card.open ? 'front face hidden' : 'front face';
-        card.style.left = card.open ? '15%' : '0%';
+        card.style.left = card.open ? '25%' : '0%';
         happyAnn.className = card.open ? 'happyAnnHeader tada' : 'happyAnnHeader';
-        confetti.className = card.open ? 'confetti' : 'confetti hidden';  
+        confetti.className = card.open ? 'confetti' : 'confetti hidden';
     }
 
 }

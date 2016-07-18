@@ -52,11 +52,13 @@ body {
     box-shadow: 4px 4px 3px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .inner-left> img {
     -webkit-transform: rotateY(180deg);
     z-index: 3;
-    height: 100%;
+    max-height: 100%;
+    /*max-width: 100%;*/
 }
 .inner-right {
     -webkit-transform: rotateY(0deg);
@@ -79,7 +81,6 @@ body {
     height: 100%;
     position: absolute;
 }
-.inner-right> p {}
 .card:hover .front, .card:hover .inner-left {
     -webkit-transform: rotateY(-35deg);
 }
@@ -115,4 +116,41 @@ body {
 .inner-right img.clink {
     height: 30%;
     width: auto;
+}
+@media (max-device-width: 1080px) {
+    .card {
+        width: 48%;
+    }
+    .front> img {
+        height: 100%;
+        position: relative;
+        left: -140%;
+    }
+    .front> .love {
+        top: 20%;
+    }
+    .mainText {
+        font-size: 2.5em;
+    }
+    .inner-right> h1 {
+        font-size: 4em;
+    }
+    .signature {
+        font-size: 3em;
+        bottom: 10%;
+    }
+    .inner-right img.clink {
+        position: relative;
+    }
+}
+@media (max-device-height: 1080px) {
+    .happyAnnHeader {
+        font-size: 3em;
+    }
+    .mainText {
+        font-size: 2em;
+    }
+    .signature {
+      font-size: 3em;
+    }
 }
