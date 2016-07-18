@@ -9,13 +9,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.set('port', 3000);
+app.set('views', __dirname);
+app.set('view engine', 'hbs');
 
 var server = http.createServer(app);
 
 server.listen(3000);
 
-// module.exports = app;
-
-app.get('/', function(req, res, next){
-    res.send('ok');
+app.get('/', function(req, res, next) {
+    res.render('card');
 });
