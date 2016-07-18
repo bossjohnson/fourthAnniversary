@@ -14,7 +14,7 @@ function doStuff() {
         frontFace.className = card.open ? 'front face hidden' : 'front face';
         card.style.left = card.open ? '15%' : '0%';
         happyAnn.className = card.open ? 'happyAnnHeader tada' : 'happyAnnHeader';
-        confetti.className = card.open ? 'confetti' : 'confetti hidden';
+        confetti.className = card.open ? 'confetti' : 'confetti hidden';  
     }
 
 }
