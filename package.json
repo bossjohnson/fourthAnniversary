@@ -1,0 +1,12 @@
+{
+  "name": "fourthAnniversaryCard",
+  "description": "A digital card for Amy and Josh's 4th anniversary",
+  "scripts": {
+    "start": "node app.js"
+  }
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  }
+}
