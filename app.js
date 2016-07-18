@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 
 var server = http.createServer(app);
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 app.get('/', function(req, res, next) {
     res.render('card');
