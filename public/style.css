@@ -143,7 +143,7 @@ body {
         position: relative;
     }
 }
-@media (max-device-height: 1080px) {
+@media (min-device-height: 1080px) {
     .happyAnnHeader {
         font-size: 3em;
     }
@@ -151,6 +151,6 @@ body {
         font-size: 2em;
     }
     .signature {
-      font-size: 3em;
+        font-size: 3em;
     }
 }
